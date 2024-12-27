@@ -1,0 +1,710 @@
+
+
+
+.MainContent {
+  flex: 1; /* Take up the rest of the space */
+  display: flex;
+  flex-direction: column; /* Stack the Navbar and DataTray vertically */
+}
+.Pagecontainer {
+  display: flex;
+  width: 100%;
+  height: 100vh; /* Ensure full height */
+}
+
+/* Sidebar styles */
+.Sidebarcontainer {
+  display: flex;
+  height: 100vh; 
+  overflow: hidden; 
+}
+
+
+.sidebar {
+  background-color: white;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #a4d7f5;
+  color: rgb(74, 72, 72);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 3px;
+  margin-right: 10px;
+  
+}
+
+.user-info .name {
+  font-weight: bold;
+  display: block;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.user-info .email {
+  color: #555;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.search input {
+  width: 97%;
+  padding: 8px;
+  border: 2px solid transparent; 
+  background-color: rgb(240, 237, 237);
+  font-weight: lighter;
+  font-size: 18px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  transition: border-color 0.1s ease; 
+}
+
+.search input:focus {
+  border-color: #156aea; 
+  outline: none; 
+}
+
+
+
+.menu-item {
+ 
+    display: flex ;
+    align-items: center;
+    cursor: pointer;
+    width: 94%;
+    border: none;
+    margin-bottom: 4px;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+    padding: 13px;
+    height: 20px;
+    border-radius: 2px;
+    color: rgb(40, 40, 40);
+  
+}
+
+.menu-item:hover {
+  border-radius: 4px;
+  background-color:  rgb(240, 237, 237); 
+  color: black;
+  width: 95.3%;
+}
+
+.menu-item .icon {
+  margin-right: 10px;
+}
+
+
+.spaces {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px ;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  margin-top: 20px;
+  width: 96%;
+}
+
+.spaces:hover{
+  background-color:  rgb(240, 237, 237); 
+  width: 96.3%;
+  padding: 10px ;
+  border-radius: 4px;
+}
+
+
+.add-space {
+  background-color: white;
+  border: 1px solid rgb(212, 209, 209);
+  font-size: 25px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.resizer {
+  width: 5px;
+    background-color: transparent;
+    cursor:col-resize;
+    position: relative;
+
+}
+
+.main-content {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+#Navbar{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+ 
+}
+#NavContent {
+  display: flex;
+  justify-content: flex-start;  /* Align the items horizontally */
+  align-items: center;  /* Vertically align items in the center */
+  width: 100%;
+}
+
+
+#navHeading{
+  font-size:50px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  margin-top: calc(-70px / 16);
+  margin-left: 20px;
+
+}
+
+#navHeading span{
+  font-size: 7px;
+  background-color: rgb(244, 241, 241);
+  border-radius: 3px;
+  margin-bottom: 2px;
+  color: rgb(103, 103, 104);
+  padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-weight:800;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 7px;
+  position: absolute;
+  margin-top: 28px;
+  
+  
+  
+}
+
+
+.button-container{
+  display: flex;
+  margin-left: 600px;
+  margin-top: calc(-1100px / 16);
+ 
+}
+.Navbuttons:first-child{
+
+  color:black;
+  
+  margin-right: 0.5rem;
+  font-size: 15px;
+  height: 2.5rem;
+  margin-top: 9px;
+  font-family: 'Roboto', sans-serif;
+  
+  background-color: rgb(237, 235, 235);
+  color: rgb(51, 51, 51);
+
+}
+.Navbuttons:first-child img{
+  
+ padding: 5px;
+ width: 20px;
+
+  
+}
+.Navbuttons:nth-child(2){
+  
+  height: 2.5rem;
+  margin-top: 9px;
+  margin-right: 1.3rem;
+  background-color:#3859ff;
+  color: white;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+}
+.Navbuttons:nth-child(2):hover{
+  background-color:#2d44b7;
+
+}
+
+.Navbuttons:first-child:hover{
+
+  background-color:rgb(228, 226, 226);  
+  
+}
+
+.Navbuttons{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 18px;
+  border: none;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  background: none;
+  
+  
+}
+.Navbuttons:hover{
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.Navbuttons img{
+  width:25px;
+  background: none;
+  border: none;
+  padding: 6px 1px 5px 1px;
+  
+
+}
+
+#NavBorder {
+  width: 100%;
+  border-top: solid rgb(234, 233, 233) 1px;
+  margin-top: -50px;  /* Add space between content and the border */
+}
+
+
+
+
+/*-----------------------------------------------------------------------DataTray-------------------------------------------------*/
+
+
+#DataTray{
+  
+  display: flex;
+  margin-top: 15px;
+  margin-left: 15px;
+  width: max-content+15px;
+  border-radius: 3px;
+  padding: 30px 15px 30px 15px;
+  align-items: center;
+  background-color: rgb(241, 244, 246);
+  margin-right: 10px; 
+  gap: 8px;
+  
+  
+}
+.Databox{
+  margin-left: 23px;
+  margin-top: 13px;
+  margin-right: -20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.Databox:hover{
+  transform: translateY(-5px); /* Move the box up by 5px */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  border: none;
+  
+}
+.Databox img{
+  width: 170px;
+  height: 80px;
+  margin: 5px;
+  border: 1px solid rgb(169, 167, 167) ;
+  border-radius: 5px;
+ 
+}
+
+.Databox:first-child img{
+  
+ background-color: white;
+}
+.Databox p{
+  padding: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: rgb(95, 93, 93);
+  font-size: 15px;
+  margin-left: 5px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.Databox img:hover{
+  background-color: rgb(234, 228, 228);
+  
+}
+.Databox img:hover ~  p{
+  color: black;
+}
+
+.Databox p:hover{
+ color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.miro-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.miro-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.miro-filters {
+  display: flex;
+  gap: 10px;
+}
+
+.miro-dropdown {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.miro-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.miro-button {
+  padding: 8px 15px;
+  border: 1px solid #0079ff;
+  border-radius: 4px;
+  background-color: white;
+  color: #0079ff;
+  cursor: pointer;
+}
+
+.create-btn {
+  background-color: #0079ff;
+  color: white;
+}
+
+.miro-board-list {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.miro-board-header {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.miro-board {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.miro-board:last-child {
+  border-bottom: none;
+}
+
+.miro-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.miro-details {
+  padding-left: 10px;
+}
+
+.miro-title {
+  font-weight: bold;
+  display: block;
+}
+
+.miro-modified {
+  color: #555;
+  font-size: 14px;
+}
+
+.miro-owner {
+  text-align: center;
+}
+
+.miro-options {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+
+
+/*---------------------------------------------------------FOoter--------------------------------------------------------------------------*/
+#footer {
+  margin-left: -5px;
+  padding: 20px;
+  /* Light background to match modern UI */
+
+  border-radius: 7px;
+  margin-top:5px;
+  padding-top: 0;
+  
+}
+
+#footerHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: default;
+  margin-bottom: 20px;
+  padding-top: 0;
+}
+
+#footerh4 {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #333;
+  padding-top: 0;
+}
+
+#footerbuttons {
+  display: flex;
+  gap: 10px;
+}
+
+#footerbuttons button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#footerbuttons button:nth-child(1) {
+  background-color: transparent;
+  border: 1px solid rgb(217, 216, 216);
+  color: #565657;
+}
+
+#footerbuttons button:nth-child(1):hover {
+  background-color: rgb(228, 226, 226);
+}
+
+#footerbuttons button:nth-child(2) {
+  background-color: #3859ff;
+  color: white;
+}
+
+#footerbuttons button:nth-child(2):hover {
+  background-color: #2d44b7;
+}
+
+.footer2nd {
+  display: flex;
+  align-items: center;
+  margin-top: -25px;
+  margin-bottom: 40px;
+  gap: 7px;
+  padding-top: 0;
+}
+.footer2nd select {
+  height: 35px;
+  width: 170px;
+  color:black;
+  padding: 6px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: solid 1px rgb(186, 183, 183);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  text-align: left; /* Center text inside the dropdown */
+  transition: background-color 0.3s;
+}
+
+.footer2ndButtons{
+  margin-left: 470px;
+}
+.footer2nd select:hover {
+  background-color: #ebeef1; 
+
+}
+label{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer2nd select option {
+  text-align: center; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer2nd select option:hover {
+  border: 1px solid #3473d2; /* Blue border on option hover */
+  background-color: #3859ff;
+  color: blue; /* Light blue background for options on hover */
+}
+
+.footer2nd img {
+  width: 20px;
+}
+
+.footerTable table {
+  width: 100%;
+  height: 250px;
+  padding-top: 0;
+  border-collapse: collapse;
+  margin-top: -21px;
+}
+
+.tabledataheading th {
+  text-align: left;
+  padding: 8px;
+  background-color:transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  color: rgb(54, 54, 54);
+}
+
+.tabledata td {
+  padding: 8px;
+  border-top: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.name-container {
+  display: flex;
+  align-items: center;
+}
+
+.name-container img {
+  width: 40px; /* Adjust size as needed */
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.name-container div p {
+  margin: 3px;
+}
+
+.name-container div p:first-child {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+.tabledata td:first-child,
+.tabledata td:last-child {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .footerTable table {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+  }
+  .name-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+ button {
+  background-color: transparent;
+  margin-right: 2px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  border-radius: 6px;
+  padding: 8px;
+}
+.tabledata button img{
+  width: 15px;
+}
+
+/*----------------------------------------------------------EDitor---------------------------------------------------------------------------------------------*/
+.Sidebar{
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  background-color: rgb(18, 158, 223);
+  width: max-content;
+  border-radius: 10px;
+  padding: 15px;
+  z-index: 1000;
+  margin-bottom: 35px;
+  position: fixed;
+  top: 300px;
+}
+
+.Sidebar img{
+  width:30px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+ 
+  padding: 3px;
+}
+
+
+img:hover{
+  background-color: rgb(248, 247, 247);
+  border: solid black 1px;
+  cursor:pointer;
+}
+
+  
+
+#editor{
+  margin-top: -6px;
+  margin-left: -5px;
+  width: 1600px;
+  height: 1500px;
+  
+}
