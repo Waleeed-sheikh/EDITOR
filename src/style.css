@@ -1,5 +1,7 @@
 
 
+/* In style.css or your relevant CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux&display=swap');
 
 .MainContent {
   flex: 1; /* Take up the rest of the space */
@@ -707,4 +709,242 @@ img:hover{
   width: 1600px;
   height: 1500px;
   
+}
+
+/*--------------------------------------------------------Overlay-----------------------------------------------------------------------*/
+
+.Signup-box{
+ 
+  width: 30%;
+  height: 70%;
+  background-color: rgb(243, 243, 224);
+  border-radius: 8px;
+  padding: 35px;
+  border: solid black 1.5px;
+}
+.Signin-box{
+  background-color: rgb(243, 243, 224);
+  width: 30%;
+  height: 70%;
+  border-radius: 8px;
+  padding: 45px;
+  border: solid black 1.5px;
+}
+
+.overlaybackground{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background:rgba(0,0,0,0.5);;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed; /* Ensures it covers the entire screen */
+}
+
+
+.login-border{
+  width: 98%;
+  height: 0.8px;
+  background-color: black;
+  margin-top: 22px;
+  margin-bottom: 28px;
+}
+
+.continue-email{
+  background-color: #3859ff;
+  width: 96%;
+  height: 45px;
+  border-radius: 7px;
+  margin-top: 13px;
+  font-size: 20px;
+  color: white;
+  font-weight: 100;
+}
+
+.with-social{
+  background-color: transparent;
+  border-radius: 4px;
+  border: solid black 1px;
+  width: 96%;
+  border-radius: 7px;
+  font-size: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease, transform 0.3s ease;
+
+}
+.login-feild{
+  width: 96.5%;
+  height: 40px;
+  border-radius: 7px;
+  border: none;
+  margin-top: 4px;
+  background-color: transparent;
+  border: solid 1px black;
+}
+
+.headingText{
+  margin-top: 0;
+  font-size: 60px;
+  font-weight: lighter;
+  font-family: 'Afacad Flux', sans-serif;
+  cursor: pointer;
+}
+.emailtext{
+  margin-top:-30px;
+  font-weight: lighter;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+.spantext{
+  font-weight:1000
+
+}
+.emailheading{
+  font-size: 14px;
+  margin-bottom: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+}
+
+.socialimg{
+  
+  border: none;
+  width: 25px;
+  margin-right: 5px;
+ outline: none;
+ border: none;
+ background: none;
+
+ 
+}
+
+.continue-email:hover{
+  background-color:#2d44b7; 
+}
+
+.with-social:hover{
+  background-color: black;
+  color: white;
+ 
+}
+
+
+
+.socialimg:hover,
+.socialimg:focus {
+  border: none; 
+  background: none; 
+  outline: none; 
+}
+
+.login-feild:hover{
+  border: solid rgb(23, 85, 241) 1px;
+  
+}
+.login-feild:focus{
+  border: solid rgb(23, 85, 241) 1px;
+  outline: none;
+  
+}
+
+.signin-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96%;
+  border-radius: 5px;
+  border: solid black 1px;
+  margin-top: -20px;
+}
+.signin-button:hover{
+  background-color: black;
+}
+
+.error-message{
+  color: red;
+  font-size: 15px;
+  margin-top: 5px;
+  font-weight: lighter;
+  font-family:Verdana, Geneva, Tahoma, sans-serif; 
+  margin-bottom: -10px;
+}
+
+.forgotpassword{
+  text-decoration: underline;
+  color: rgb(15, 84, 247);
+  font-family:Verdana, Geneva, Tahoma, sans-serif; 
+  cursor: pointer;
+  padding: 3px;
+  width: max-content;
+  font-size: 12px;
+}
+
+.forgotpassword:hover{
+  background-color: rgb(182, 179, 179);
+  border-radius: 5px;
+}
+
+
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  font-family:'Afacad Flux', sans-serif;
+}
+
+.checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  accent-color: #3859ff; 
+  cursor: pointer;
+}
+
+
+.checkbox input[type="checkbox"]:focus {
+  outline: none; 
+}
+
+.checkbox label {
+  cursor: pointer;
+}
+
+.checkbox input[type="checkbox"]:hover {
+  opacity: 0.8; 
+}
+
+
+.loginPics:hover{
+  border: none; 
+  background: none; 
+  outline: none;
+  padding: 0;
+}
+
+.loginPics{
+  width: 30px;
+  padding: 0;
+
+  
+}
+
+
+.toggle-container{
+  position:absolute;
+  margin-top: -505px;
+  margin-left: 470px;
+  width: max-content;
+  
+}
+
+.toggle-button:hover{
+  background:none;
 }
